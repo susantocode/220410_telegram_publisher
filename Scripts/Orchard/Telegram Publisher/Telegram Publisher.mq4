@@ -47,7 +47,7 @@ void         OnStart( void ) {
 
    // Save a screen shot
    ChartRedraw(); // Make sure the chart is up to date
-   ChartScreenShot( 0, "MyScreenshot.jpg", 1024, 768, ALIGN_RIGHT );
+   ChartScreenShot( 0, "MyScreenshot.bmp", 1024, 768, ALIGN_RIGHT );
 
    SendTelegramMessage( TelegramApiUrl, TelegramBotToken, ChatId,
                                 "Test message " + TimeToString( TimeLocal() ) ); // no image attached
